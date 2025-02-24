@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>train website</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Railway Ticket</title>
+  </head>
+  <style>
+    body {
+        background: url('/part 1/train.png') no-repeat center center fixed;
+        background-size: cover;
+    }
+    .complete{
+        background-color: whitesmoke;
+        border: 3px solid black;
+        border-radius: 10px;
+        padding: 20px;
+        width: 500px;
+        height: auto;
+        position: relative;
+    }
+    .one{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .col{
+        color: white;
+        background-color:rgb(19, 19, 129) ;
+    }
+    .ticket{
+        color: rgb(19, 19, 129);
+    }
+    .two{
+        justify-content: space-around;
+        padding: 10px;  
+    }
+    .three{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px; 
+    }
+    .search{
+        color: white;
+        background-color: orange;
+    }
+    .try{
+        color: white;
+        background-color: green;
+    }
+  </style>
+  <body>
+    <div class="complete">
+      <form>
+        <div class="one">
+          <button class="col">PNR STATUS</button>
+          <button class="col">CHARTS/VACANCY</button>
+        </div>
+        <center><h2 class="ticket">BOOK TICKET</h2></center>
+        <div class="two">
+          <input type="text" placeholder="From" size="30px" />
+          <input type="date" />
+          <br /><br />
+          <input type="text" placeholder="To" size="30px" />
+          <select>
+            <option>All Classes</option>
+            <option>Ac First class</option>
+            <option>Ac 2 tier</option>
+            <option>Ac 3 tier</option>
+            <option>First class</option>
+            <option>Sleeper class</option>
+          </select>
+          <br /><br />
+          <select>
+            <option>GENERAL</option>
+            <option>LADIES</option>
+            <option>SR.CITIZENS</option>
+            <option>DISABLE</option>
+            <option>TATKAL</option>
+          </select>
+        </div>
+        <div class="ticket">
+          <div class="two">
+            <b> 
+                <input type="checkbox" /> Person With Disability Concession
+                <input type="checkbox" /> Flexible With Date
+                <br>
+                <input type="checkbox" /> Train with Available Berth
+                <input type="checkbox" /> Railway Pass Concession
+            </b>
+          </div>
+        </div>
+        <div class="three">
+            <button class="search">Search</button>
+            <button class="try">Try Booking in Ask DISHA 2.0</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
