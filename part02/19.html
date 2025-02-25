@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Map</title>
 </head>
 <body>
-    
+    <img src="/asset/india.png" usemap="#m1"/>
+    <map name="m1">
+    <area shape="poly"
+    coords="180,340,165,400,190,468,255,381"
+    href="https://en.wikipedia.org/wiki/Telangana" />
+    <area shape="circle"
+    coords="165,268,100"
+    href="https://en.wikipedia.org/wiki/Madhya_Pradesh" />
+    <area shape="rect"
+    coords="80,331,150,368"
+    href="https://en.wikipedia.org/wiki/Maharashtra" />
+    <area shape="default"
+    href="https://en.wikipedia.org/wiki/India" />
+</map>
 </body>
 </html>
