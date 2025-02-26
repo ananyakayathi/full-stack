@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square or not</title>
+</head>
+<script>
+    function f1(){
+        let l=t1.value;
+        let b=t2.value;
+        if(l==b){
+            l1.innerHTML="It is a Square";
+          
+        }
+        else{
+            l1.innerHTML="It is a Rectangle";
+          
+        }
+    }
+</script>
+<body>
+    <p><input type="number" placeholder="Length" id="t1"></p>
+    <p><input type="number" placeholder="breadth" id="t2"></p>
+    <button onclick="f1()">Submit</button>
+    <p><label id="l1"></label></p>
+</body>
+</html>
