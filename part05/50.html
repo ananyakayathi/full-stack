@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Function Type-object</title>
+</head>
+<body>
+  <script>
+    const student ={"first name":"john",age:"20"}
+    document.write(student["first name"]+"<br>")
+    document.write(student.age+"<br>")
+    student.email="john@gmail.com"
+    console.log(student)
+    student.city="chennai";
+    delete student.age
+    console.log(student)
+    student.age=30
+    console.log(student)
+    document.write(student.age)
+  </script>
+</body>
+</html>
