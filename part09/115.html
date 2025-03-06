@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //encapsulation-get is for assisgning set is for retrieving
+        class Employee {
+            #name = ""//# denotes variable type
+            get name() {
+                return this.#name;
+            }
+            set name(value) {
+                this.#name = value
+            }
+        }
+//get and set are pre defined 
+        const emp1 = new Employee()
+        emp1.name = "John"
+        console.log(emp1.name)
+
+    </script>
+</body>
+</html>
